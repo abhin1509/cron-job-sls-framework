@@ -13,3 +13,4 @@ package:
 functions:
   hello:
     handler: handler.hello
+    name: cronJob-sls
