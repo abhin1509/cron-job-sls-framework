@@ -25,7 +25,7 @@ const serviceDown = async () => {
    }
 }
 
-exports.handler = (event) => {
+module.exports.hello = (event) => {
    console.log(event);
    http.get(SITE, function(res) {
       console.log("response ", res);
