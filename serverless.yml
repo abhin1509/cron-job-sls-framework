@@ -14,8 +14,12 @@ package:
  patterns:
     - '!package-lock.json'
     - '!node_modules/**'
+    - '!package.json'
+    - '!README.md'
 
 functions:
   hello:
     handler: handler.hello
     name: cronJob-sls
+    events:
+      - schedule: rate(2 minutes)
